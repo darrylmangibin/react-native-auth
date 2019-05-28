@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import firebase from 'firebase';
 import { Header } from './components/common';
+import LoginForm from './components/LoginForm';
 
 class App extends React.Component {
   componentWillMount() {
@@ -15,11 +16,12 @@ class App extends React.Component {
       appId: "1:412805865587:web:1587dc8ad463fd63"
     });
   }
-  
+
   render() {
     return (
       <View>
         <Header headerText="Authentication" />
+        <LoginForm />
       </View>
     )
   }
